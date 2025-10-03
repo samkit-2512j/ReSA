@@ -1,0 +1,417 @@
+$date
+	Fri Sep 26 12:06:36 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module pe_tb $end
+$var wire 16 ! output_2 [15:0] $end
+$var wire 32 " output_1 [31:0] $end
+$var wire 16 # output_0 [15:0] $end
+$var parameter 32 $ ACCUM_WIDTH $end
+$var parameter 32 % CLK_PERIOD $end
+$var parameter 32 & DATA_WIDTH $end
+$var parameter 2 ' IS_MODE $end
+$var parameter 2 ( OS_MODE $end
+$var parameter 2 ) WS_MODE $end
+$var reg 1 * clk $end
+$var reg 2 + dataflow_sel [1:0] $end
+$var reg 16 , input_0 [15:0] $end
+$var reg 16 - input_1 [15:0] $end
+$var reg 16 . input_2 [15:0] $end
+$var reg 16 / preload_data [15:0] $end
+$var reg 1 0 preload_en $end
+$var reg 1 1 rst_n $end
+$scope module uut $end
+$var wire 1 * clk $end
+$var wire 2 2 dataflow_sel [1:0] $end
+$var wire 16 3 input_0 [15:0] $end
+$var wire 32 4 input_1 [31:0] $end
+$var wire 16 5 input_2 [15:0] $end
+$var wire 16 6 multiplier_in_B [15:0] $end
+$var wire 16 7 output_0 [15:0] $end
+$var wire 32 8 output_1 [31:0] $end
+$var wire 16 9 output_2 [15:0] $end
+$var wire 16 : preload_data [15:0] $end
+$var wire 1 0 preload_en $end
+$var wire 1 1 rst_n $end
+$var wire 16 ; multiplier_in_A [15:0] $end
+$var wire 32 < mac_result [31:0] $end
+$var wire 32 = adder_in_B [31:0] $end
+$var parameter 32 > ACCUM_WIDTH $end
+$var parameter 32 ? DATA_WIDTH $end
+$var parameter 2 @ IS_MODE $end
+$var parameter 2 A OS_MODE $end
+$var parameter 2 B WS_MODE $end
+$var reg 32 C accumulator [31:0] $end
+$var reg 16 D local_buffer [15:0] $end
+$var reg 16 E output_0_reg [15:0] $end
+$var reg 32 F output_1_reg [31:0] $end
+$var reg 16 G output_2_reg [15:0] $end
+$upscope $end
+$scope task test_is_mode $end
+$upscope $end
+$scope task test_mac_operations $end
+$upscope $end
+$scope task test_os_mode $end
+$upscope $end
+$scope task test_preload $end
+$upscope $end
+$scope task test_reset $end
+$upscope $end
+$scope task test_ws_mode $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 B
+b10 A
+b1 @
+b10000 ?
+b100000 >
+b0 )
+b10 (
+b1 '
+b10000 &
+b1010 %
+b100000 $
+$end
+#0
+$dumpvars
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+01
+00
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+0*
+b0 #
+b0 "
+b0 !
+$end
+#5000
+1*
+#10000
+0*
+#15000
+1*
+#20000
+0*
+#25000
+1*
+#30000
+0*
+11
+#35000
+1*
+#40000
+0*
+b1001000110100 /
+b1001000110100 :
+10
+#45000
+b1001000110100 ;
+b1001000110100 D
+1*
+#50000
+0*
+b10010001101000 <
+b10 6
+b10 .
+b10 5
+00
+#55000
+b10 !
+b10 9
+b10 G
+b10010001101000 "
+b10010001101000 8
+b10010001101000 F
+b10010001101000 C
+1*
+#60000
+b0 <
+b0 ;
+b0 !
+b0 9
+b0 G
+b0 "
+b0 8
+b0 F
+b0 C
+b0 D
+0*
+01
+#65000
+1*
+#70000
+0*
+b101 /
+b101 :
+10
+11
+#75000
+b1010 <
+b101 ;
+b10 !
+b10 9
+b10 G
+b101 D
+1*
+#80000
+b10000 =
+0*
+b11111 <
+b11 6
+b11 .
+b11 5
+b10000 4
+b10000 -
+b1000100010001 ,
+b1000100010001 3
+00
+#85000
+b11 !
+b11 9
+b11 G
+b11111 "
+b11111 8
+b11111 F
+b11111 C
+1*
+#90000
+b10000 <
+b0 ;
+b0 !
+b0 9
+b0 G
+b0 "
+b0 8
+b0 F
+b0 C
+b0 D
+0*
+01
+#95000
+1*
+#100000
+0*
+b111 /
+b111 :
+10
+b1 +
+b1 2
+11
+#105000
+b100101 <
+b111 ;
+b11 !
+b11 9
+b11 G
+b10000 "
+b10000 8
+b10000 F
+b10000 C
+b111 D
+1*
+#110000
+b100000 =
+0*
+b111100 <
+b100 6
+b100 .
+b100 5
+b100000 4
+b100000 -
+b10001000100010 ,
+b10001000100010 3
+00
+#115000
+b100 !
+b100 9
+b100 G
+b111100 "
+b111100 8
+b111100 F
+b111100 C
+1*
+#120000
+b100000 <
+b0 ;
+b0 !
+b0 9
+b0 G
+b0 "
+b0 8
+b0 F
+b0 C
+b0 D
+0*
+01
+#125000
+1*
+#130000
+b10001000100010 ;
+b1000100010001000 <
+b0 =
+0*
+b1001 /
+b1001 :
+10
+b10 +
+b10 2
+11
+#135000
+b10001000100010000 <
+b1000100010001000 =
+b100 !
+b100 9
+b100 G
+b10001000100010 #
+b10001000100010 7
+b10001000100010 E
+b1000100010001000 C
+b1001 D
+1*
+#140000
+b110 ;
+0*
+b1000100010100110 <
+b101 6
+b101 .
+b101 5
+b110000 4
+b110000 -
+b110 ,
+b110 3
+00
+#145000
+b1000100011000100 <
+b1000100010100110 =
+b101 !
+b101 9
+b101 G
+b110 #
+b110 7
+b110 E
+b1000100010100110 C
+1*
+#150000
+b1000 ;
+0*
+b1000100010111110 <
+b11 6
+b11 .
+b11 5
+b1000 ,
+b1000 3
+#155000
+b1000100011010110 <
+b1000100010111110 =
+b11 !
+b11 9
+b11 G
+b1000 #
+b1000 7
+b1000 E
+b1000100010111110 C
+1*
+#160000
+b11000 <
+b0 =
+b0 !
+b0 9
+b0 G
+b0 #
+b0 7
+b0 E
+b0 C
+b0 D
+0*
+01
+#165000
+1*
+#170000
+b0 ;
+b110000 <
+b110000 =
+0*
+b1010 /
+b1010 :
+10
+b0 +
+b0 2
+11
+#175000
+b1001110 <
+b1010 ;
+b11 !
+b11 9
+b11 G
+b110000 "
+b110000 8
+b110000 F
+b110000 C
+b1010 D
+1*
+#180000
+b1100100 =
+0*
+b10010110 <
+b101 6
+b101 .
+b101 5
+b1100100 4
+b1100100 -
+00
+#185000
+b101 !
+b101 9
+b101 G
+b10010110 "
+b10010110 8
+b10010110 F
+b10010110 C
+1*
+#190000
+b11001000 =
+0*
+b11100110 <
+b11 6
+b11 .
+b11 5
+b11001000 4
+b11001000 -
+#195000
+b11 !
+b11 9
+b11 G
+b11100110 "
+b11100110 8
+b11100110 F
+b11100110 C
+1*
+#200000
+0*
